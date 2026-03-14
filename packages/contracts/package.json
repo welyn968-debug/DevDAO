@@ -1,0 +1,26 @@
+{
+  "name": "@devdao/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "typechain": "hardhat typechain",
+    "deploy:amoy": "hardhat run scripts/deploy.ts --network amoy",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network polygon",
+    "export": "hardhat run scripts/export.ts"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@typechain/ethers-v6": "^0.5.1",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.2",
+    "typechain": "^8.3.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

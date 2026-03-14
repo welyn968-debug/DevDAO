@@ -1,0 +1,10 @@
+{
+  "pipeline": {
+    "build":   { "dependsOn": ["^build"], "outputs": [".next/**", "dist/**"] },
+    "dev":     { "cache": false, "persistent": true },
+    "lint":    {},
+    "typecheck": { "dependsOn": ["^build"] },
+    "test":    { "dependsOn": ["^build"] },
+    "db:migrate": { "cache": false }
+  }
+}

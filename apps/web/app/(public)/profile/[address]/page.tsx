@@ -57,13 +57,13 @@ export default async function ProfilePage({ params }: { params: { address: strin
           <div className="avatar">0x</div>
           <div>
             <div className="profile-name">{profile.displayName || profile.githubHandle || profile.address}</div>
-            <div className="profile-addr">Connected · Polygon</div>
+            <div className="profile-addr">Connected ? Polygon</div>
             <div className={`tier-badge tier-${profile.tier}`}>?? {profile.tier}</div>
           </div>
           <div style={{ marginLeft: "auto", textAlign: "right" }}>
             <div style={{ fontSize: 12, color: "var(--text-dim)", fontFamily: "var(--font-mono)", marginBottom: 4 }}>DEV Balance</div>
             <div style={{ fontSize: 26, fontWeight: 800, color: "var(--cyan)", fontFamily: "var(--font-mono)" }}>{profile.tokenBalance}</div>
-            <div style={{ fontSize: 11, color: "var(--text-dim)", fontFamily: "var(--font-mono)" }}>˜ on-chain</div>
+            <div style={{ fontSize: 11, color: "var(--text-dim)", fontFamily: "var(--font-mono)" }}>? on-chain</div>
           </div>
         </div>
         <div className="profile-stats">

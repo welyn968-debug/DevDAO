@@ -46,7 +46,7 @@ export default function SubmitPage() {
         <div style={{ background: "rgba(0,255,157,.08)", border: "1px solid rgba(0,255,157,.2)", borderRadius: 10, padding: 32, textAlign: "center" }}>
           <div style={{ fontSize: 40, marginBottom: 12 }}>?</div>
           <div style={{ fontSize: 18, fontWeight: 800, color: "var(--green)", marginBottom: 6 }}>Contribution Submitted!</div>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-dim)" }}>Pinned to IPFS · On-chain record created · Voting opens in 1 hour</div>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-dim)" }}>Pinned to IPFS ? On-chain record created ? Voting opens in 1 hour</div>
         </div>
       ) : (
         <div style={{ display: "grid", gridTemplateColumns: "1fr 300px", gap: 20 }}>
@@ -98,10 +98,10 @@ export default function SubmitPage() {
             <div style={{ background: "rgba(255,179,0,.05)", border: "1px solid rgba(255,179,0,.2)", borderRadius: 10, padding: 16 }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: "var(--amber)", marginBottom: 8, fontFamily: "var(--font-mono)" }}>? REQUIREMENTS</div>
               <div style={{ fontSize: 12, color: "var(--text-dim)", lineHeight: 1.6 }}>
-                • Hold at least 1 DEV token<br />
-                • Linked GitHub account<br />
-                • Minimum 5% quorum to pass<br />
-                • Simple majority (FOR > AGAINST)
+                ? Hold at least 1 DEV token<br />
+                ? Linked GitHub account<br />
+                ? Minimum 5% quorum to pass<br />
+                ? Simple majority (FOR &gt; AGAINST)
               </div>
             </div>
           </div>
@@ -110,3 +110,4 @@ export default function SubmitPage() {
     </div>
   );
 }
+
